@@ -13,12 +13,10 @@ jobs:
       - uses: actions/checkout@v3
 
       - uses: devopsx/gha-ubuntu-i386-fix@master
-        with:
-          install_wine: true
 
       - name: Install packages
         run: |
-          sudo DEBIAN_FRONTEND=noninteractive eatmydata apt-get install -o=Dpkg::Use-Pty=0 -y crudini dos2unix gcc p7zip
+          sudo DEBIAN_FRONTEND=noninteractive eatmydata apt-get install -o=Dpkg::Use-Pty=0 -y p7zip
           WINEARCH=win32 eatmydata wineboot
 
       - name: Build and package

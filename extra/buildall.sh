@@ -19,7 +19,7 @@ if [[ -d rp ]]; then
   git pull
   cd ..
 else
-  git clone https://github.com/BGforgeNet/Fallout2_Restoration_Project.git rp
+  git-clone-dir https://github.com/BGforgeNet/Fallout2_Restoration_Project.git rp scripts_src/headers
 fi
 rm -f "$headers_dir/rp"
 ln -sf "$external_dir/rp/scripts_src/headers" "$headers_dir/rp"
@@ -29,7 +29,7 @@ if [[ -d party_orders ]]; then
   git pull
   cd ..
 else
-  git clone https://github.com/BGforgeNet/Fallout2_Party_Orders.git party_orders
+  git-clone-dir https://github.com/BGforgeNet/Fallout2_Party_Orders.git party_orders source/headers
 fi
 rm -f  "$headers_dir/party_orders"
 ln -sf "$external_dir/party_orders/source/headers/party_orders" "$headers_dir/party_orders"
@@ -39,7 +39,7 @@ if [[ -d sfall ]]; then
   git pull
   cd ..
 else
-  git clone https://github.com/phobos2077/sfall.git sfall
+  git-clone-dir https://github.com/sfall-team/sfall.git sfall artifacts/scripting/headers
 fi
 rm -f  "$headers_dir/sfall"
 ln -sf "$external_dir/sfall/artifacts/scripting/headers" "$headers_dir/sfall"
