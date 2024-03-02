@@ -236,7 +236,7 @@ To avoid this, these brahmin will now be on player's team.
 
 Expanded version of Sfall highlighting mod. A picture is worth a thousand words. Highly configurable.
 
-**Note:** if you're using this, you must disable default sfall highlighting (delete `data/scripts/gl_highlighting.int`).
+**Note:** if you're using this, you must disable default sfall highlighting (set `Key=0` in `Highlighting` section of `sfall-mods.ini`).
 
 ![highlighting in game](https://github.com/BGforgeNet/FO2tweaks/blob/master/pics/highlighting.jpg "highlighting in game")
 
@@ -251,6 +251,7 @@ This allows to set a lower limit for the ambient light level. Refer to the [wiki
 - Download `fo2tweaks_v*.zip` from the [latest release](https://github.com/BGforgeNet/FO2tweaks/releases/latest) page.
 - Unzip the archive into main game directory. FO2tweaks requires sfall (`ddraw.dll`) version 4.1.3+, it's shipped with the mod. If you have a newer version, you don't need to overwite the dll when extracting the archive.
 - Edit `mods/fo2tweaks.ini` to enable, disable or fine tune components as you desire.
+- If `mods/mods_order.txt` file exists, ensure that `fo2tweaks.dat` line is present in it.
 
 This is how it's supposed to look when installed:
 
